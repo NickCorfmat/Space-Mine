@@ -239,10 +239,10 @@ Looking back on how you achieved the new F3 requirements, how has your team’s 
 
 To run the game, follow these simple steps:
 
-1. **Clone the Repository**: Start by cloning the repository to your local machine. You can do this using the following command:
+1. **Clone the Repository:** You can do this using the following command:
    ```bash
    git clone <repository-url>
 2. Once in the project directory, install the following dependencies
-+ `npm install`
-+ `npm install yaml`
+    + `npm install`
+    + `npm install yaml`
 3. Finally, run `npm run dev` to run the game locally.
