@@ -231,6 +231,7 @@ We used Github Pages and node.js in combination with vite to get our game instal
 
 Mobile Icon:
 ![Mobile_Icon](./IMG_1929.jpg)
+Source: Marco's Phone
 
 ### Mobile Play (Offline)
 
