@@ -243,9 +243,7 @@ To run the game, follow these simple steps:
 1. **Clone the Repository:** You can do this using the following command:
    ```bash
    git clone <repository-url>
-2. Once in the project directory, install the following dependencies
-    + `npm install`
-    + `npm install yaml`
+2. Once in the project directory, install necessary dependencies using `npm install`.
 3. Finally, run `npm run dev` to run the game locally.
 
 ## Additional Notes
