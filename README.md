@@ -227,7 +227,7 @@ Our game supports three languages: English, Arabic, and Chinese. For English, we
 
 ### Mobile Installation
 
-We used Github Pages and node.js in combination with vite to get our game installable on mobile devices. We chose our main player character as the Icon for this app with a light purple outline. The way to install this app on your device is to open the github pages link on any mobile broweser and simply select the add to homescreen option.
+We used Github Pages and node.js in combination with vite to get our game installable on mobile devices. We chose our main player character as the Icon for this app with a light purple outline. The way to install this app on your device is to open the github pages link on any mobile broweser and simply select the add to homescreen option. We followed a template project from github using vite's pwa plugin and slowly implemented our game file by file making sure each step of the way the game stayed in tact.
 
 Mobile Icon:
 ![Mobile_Icon](./IMG_1929.jpg)
@@ -235,10 +235,10 @@ Source: Marco's Phone
 
 ### Mobile Play (Offline)
 
-What changes to your design were needed to make it play well on a mobile device? Were there any changes needed to make sure it worked in the offline case?
+Our game uses Progressive Web App capabilities using Vite's PWA plugin alongside a manifest file. This setup facilitates the generation of a service worker upon building the game, enabling offline functionality. The service worker acts as a proxy between the web application and the network, allowing the game to cache essential assets. Additionally, by utilizing local storage, your game can save user data locally, ensuring a seamless offline play experience.
 
 ## Reflection
-Looking back on how you achieved the new F3 requirements, how has your team’s plan changed? Did you reconsider any of the choices you previously described for Tools and Materials or your Roles? Has your game design evolved now that you've started to think about giving the player more feedback? It would be very suspicious if you didn’t need to change anything. There’s learning value in you documenting how your team’s thinking has changed over time.
+Our team's plans changed drastically over this development cycle. We opted for using a PWA with github pages for getting our mobile implementation working which ended up being a much lengthier process than we had planned for.  We learned the importance of establishing a project's end platform in order to optimize gameplay and user feedback. In regards to language localization, we learned the significance of translating projects meant for public use into different languages. This was not only the case for diversity of expirience but also for improvability of UI and UX that allows for devices with different text requirements. 
 
 ## Running the Game
 
