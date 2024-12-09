@@ -50,7 +50,7 @@ export default defineConfig({
                 name: 'Space-Mine',
                 short_name: 'SpaceMine',
                 description: 'A 2D mining simulator built using Phaser',
-                start_url: 'index.html',
+                start_url: '/index.html',
                 display: 'standalone',
                 icons: [
                     {
@@ -86,6 +86,14 @@ export default defineConfig({
                 ],
                 theme_color: '#ffffff',
                 background_color: '#ffffff',
+            },
+            workbox: {
+                globDirectory: 'dist/',
+                globPatterns: [
+                    '**/*.{js,css,html,png,jpg,jpg,svg,ico,webmanifest}',
+                ],
+                swDest: 'dist/sw.js',
+                cleanupOutdatedCaches: true,
             },
         }),
     ]
