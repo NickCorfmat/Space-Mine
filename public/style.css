@@ -87,3 +87,44 @@ button:hover {
   color: #fff;
   margin: 0 10px; /* Add margin to avoid text overflow */
 }
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  #game-container {
+    border: 4px solid black;
+    max-width: 100%;
+  }
+
+  #phaser-game {
+    height: 300px;
+  }
+
+  #info-panel {
+    flex-direction: column;
+    border: 4px solid rgb(130, 138, 255);
+  }
+
+  #info-panel-left,
+  #info-panel-middle,
+  #info-panel-right {
+    width: 100%;
+    padding: 5px;
+  }
+
+  button {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  #playerDisplay {
+    font-size: 1.2em;
+  }
+}
