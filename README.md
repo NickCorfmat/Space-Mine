@@ -234,7 +234,9 @@ Players can select the language from within the game using language buttons avai
 We used Github Pages and Node.js in combination with Vite to get our game installable on mobile devices. We chose our main player character as the icon for this app with a light purple outline. The way to install this app on your device is to open the github pages link on any mobile broweser and simply select the add to homescreen option. We followed a template project from github using Vite's PWA plugin and slowly implemented our game file by file making sure each step of the way the game stayed in tact.
 
 Mobile Icon:
+
 ![Mobile_Icon](./IMG_1929.jpg)
+
 Source: Marco's Phone
 
 [Phaser Vite Typescript Template we used](https://github.com/phaserjs/template-vite-ts)
