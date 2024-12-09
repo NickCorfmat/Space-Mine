@@ -1,5 +1,6 @@
 # Project
 [Jump to Running the Game](#running-the-game)
+[Skip to Additional Notes](#additional-notes)
 
 # Devlog Entry - 11/14/24
 
@@ -246,3 +247,7 @@ To run the game, follow these simple steps:
     + `npm install`
     + `npm install yaml`
 3. Finally, run `npm run dev` to run the game locally.
+
+## Additional Notes
+This repository is a new version of an older project that has been migrated to use Vite for improved development experience.
+[Link to old repository](https://github.com/NickCorfmat/cmpm-121-final)
