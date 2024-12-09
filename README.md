@@ -229,6 +229,9 @@ Our game supports three languages: English, Arabic, and Chinese. For English, we
 
 How did you get your game to be installable on a smartphone-class mobile device? If you followed a tutorial, guide, video, or blogpost, directly link to those resources that helped you learn. What changes were needed to make the game installable?
 
+Mobile Icon:
+![Mobile_Icon](./IMG_1929.png)
+
 ### Mobile Play (Offline)
 
 What changes to your design were needed to make it play well on a mobile device? Were there any changes needed to make sure it worked in the offline case?
