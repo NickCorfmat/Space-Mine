@@ -230,7 +230,7 @@ Our game supports three languages: English, Arabic, and Chinese. For English, we
 How did you get your game to be installable on a smartphone-class mobile device? If you followed a tutorial, guide, video, or blogpost, directly link to those resources that helped you learn. What changes were needed to make the game installable?
 
 Mobile Icon:
-![Mobile_Icon](./IMG_1929.png)
+![Mobile_Icon](./IMG_1929.jpg)
 
 ### Mobile Play (Offline)
 
