@@ -227,7 +227,7 @@ Our game supports three languages: English, Arabic, and Chinese. For English, we
 
 ### Mobile Installation
 
-How did you get your game to be installable on a smartphone-class mobile device? If you followed a tutorial, guide, video, or blogpost, directly link to those resources that helped you learn. What changes were needed to make the game installable?
+We used Github Pages and node.js in combination with vite to get our game installable on mobile devices. We chose our main player character as the Icon for this app with a light purple outline. The way to install this app on your device is to open the github pages link on any mobile broweser and simply select the add to homescreen option.
 
 Mobile Icon:
 ![Mobile_Icon](./IMG_1929.jpg)
