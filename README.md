@@ -1,6 +1,6 @@
-# Project
-[Jump to Running the Game](#running-the-game)
-[Skip to Additional Notes](#additional-notes)
+# Space-Mine - A 2D Phaser Mining Simulator
++ [Jump to Running the Game](#running-the-game)
++ [Skip to Additional Notes](#additional-notes)
 
 # Devlog Entry - 11/14/24
 
@@ -250,4 +250,5 @@ To run the game, follow these simple steps:
 
 ## Additional Notes
 This repository is a new version of an older project that has been migrated to use Vite for improved development experience.
+
 [Link to old repository](https://github.com/NickCorfmat/cmpm-121-final)
