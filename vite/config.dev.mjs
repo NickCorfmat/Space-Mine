@@ -22,7 +22,7 @@ export default defineConfig({
                 name: 'Space-Mine',
                 short_name: 'SpaceMine',
                 description: 'A 2D mining simulator built using Phaser',
-                start_url: "index.html",
+                start_url: "/index.html",
                 display: "fullscreen",
                 icons: [
                     {
