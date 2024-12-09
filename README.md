@@ -215,27 +215,33 @@ Our team learned from F2 about the importance of building a solid foundation for
 ## How we satisfied the software requirements
 ### F0+F1+F2
 
-The biggest change we made from the last implementations of our game was the switch from using webpack and ts loader to fully using a vite deno implementation. This allows us to not be bottleknecked by bundling as we were before and can now test more frequently with live code updates to our game.
+The biggest change we made from the last implementations of our game was the switch from using webpack and ts loader to fully using a Vite + Deno implementation. This allows us to not be bottleknecked by bundling as we were before and can now test more frequently with live code updates to our game.
 
 ### Internationalization
 
-Internationalization was achieved by using a dedicated LanguageManager class that handles all translatable strings. Each translatable string is now referenced by a key, and the LanguageManager fetches the appropriate translation based on the current language setting. To ensure completeness and catch missing translations, we leveraged TypeScript's type system. We defined a type for all possible translation keys, and any attempt to use a key not defined in this type results in a compile-time error. This approach helps us catch incomplete translations early in the development process. When adding support for a new language, developers need to update the translations.json file with the new language's translations. Additionally, any new translatable messages must be added to this file and referenced by their keys in the code. This ensures that all user-facing strings are properly localized and easily maintainable.
+Internationalization was achieved by using a dedicated `LanguageManager` class that handles all translatable strings. Each translatable string is now referenced by a key, and the language manager fetches the appropriate translation based on the current language setting. To ensure completeness and catch missing translations, we leveraged TypeScript's type checking system. We defined a type for all possible translation keys, and any attempt to use a key not defined in this type results in a compile-time error. This approach helps us catch incomplete translations early in the development process. When adding support for a new language, developers need to update the translations.json file with the new language's translations.
+
+Any new translatable messages need to simply be added to the `LanguageManager.ts`, specifically as a new object within the `translations` object. This new language can then be accessed by referencing its key code.
 
 ### Localization
 
-Our game supports three languages: English, Arabic, and Chinese. For English, we used our own knowledge as it is the primary language of the development team. For Arabic, which is a right-to-left script, we used ChatGPT to assist with translations by providing context about the game's content and specific phrases that needed translation. For Chinese, which is a logographic script, we used ChatGPT as well. Players can select the language from within the game using language buttons available on the main menu. These buttons are labeled with the respective language names and allow players to switch languages dynamically during gameplay. This approach ensures that we meet the requirements of supporting at least one logographic script (Chinese) and one right-to-left script (Arabic).
+Our game supports three languages: English, Arabic, and Chinese. For English, we used our own knowledge as it is the primary language of the development team. For Arabic, which is a right-to-left script, we used ChatGPT to assist with translations by providing context about the game's content and specific phrases that needed translation. For Chinese, which is a logographic script, we similarly used ChatGPT to retrieve a translation within the game's context.
+
+Players can select the language from within the game using language buttons available on the main menu. These buttons are labeled with the respective language names and allow players to switch languages dynamically during gameplay. This approach ensures that we meet the requirements of supporting at least one logographic script (Chinese) and one right-to-left script (Arabic).
 
 ### Mobile Installation
 
-We used Github Pages and node.js in combination with vite to get our game installable on mobile devices. We chose our main player character as the Icon for this app with a light purple outline. The way to install this app on your device is to open the github pages link on any mobile broweser and simply select the add to homescreen option. We followed a template project from github using vite's pwa plugin and slowly implemented our game file by file making sure each step of the way the game stayed in tact.
+We used Github Pages and Node.js in combination with Vite to get our game installable on mobile devices. We chose our main player character as the icon for this app with a light purple outline. The way to install this app on your device is to open the github pages link on any mobile broweser and simply select the add to homescreen option. We followed a template project from github using Vite's PWA plugin and slowly implemented our game file by file making sure each step of the way the game stayed in tact.
 
 Mobile Icon:
 ![Mobile_Icon](./IMG_1929.jpg)
 Source: Marco's Phone
 
+[Phaser Vite Typescript Template we used](https://github.com/phaserjs/template-vite-ts)
+
 ### Mobile Play (Offline)
 
-Our game uses Progressive Web App capabilities using Vite's PWA plugin alongside a manifest file. This setup facilitates the generation of a service worker upon building the game, enabling offline functionality. The service worker acts as a proxy between the web application and the network, allowing the game to cache essential assets. Additionally, by utilizing local storage, your game can save user data locally, ensuring a seamless offline play experience.
+Our game uses Progressive Web App capabilities using Vite's PWA plugin alongside a manifest file. This setup facilitates the generation of a service worker upon building the game, enabling offline functionality. The service worker acts as a proxy between the web application and the network, allowing the game to cache essential assets. Additionally, since our game originally implemented local storage as a data-saving feature, the PWA is able to benefit from this feature and saves the user's data locally, allowing for offline play.
 
 ## Reflection
 Our team's plans changed drastically over this development cycle. We opted for using a PWA with github pages for getting our mobile implementation working which ended up being a much lengthier process than we had planned for.  We learned the importance of establishing a project's end platform in order to optimize gameplay and user feedback. In regards to language localization, we learned the significance of translating projects meant for public use into different languages. This was not only the case for diversity of expirience but also for improvability of UI and UX that allows for devices with different text requirements. 
