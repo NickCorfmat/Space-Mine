@@ -1,3 +1,6 @@
+# Project
+[Jump to Running the Game](#running-the-game)
+
 # Devlog Entry - 11/14/24
 
 ## Introducing the team
@@ -231,3 +234,15 @@ What changes to your design were needed to make it play well on a mobile device?
 
 ## Reflection
 Looking back on how you achieved the new F3 requirements, how has your team’s plan changed? Did you reconsider any of the choices you previously described for Tools and Materials or your Roles? Has your game design evolved now that you've started to think about giving the player more feedback? It would be very suspicious if you didn’t need to change anything. There’s learning value in you documenting how your team’s thinking has changed over time.
+
+## Running the Game
+
+To run the game, follow these simple steps:
+
+1. **Clone the Repository**: Start by cloning the repository to your local machine. You can do this using the following command:
+   ```bash
+   git clone <repository-url>
+2. Once in the project directory, install the following dependencies
++ `npm install`
++ `npm install yaml`
+3. Finally, run `npm run dev` to run the game locally.
